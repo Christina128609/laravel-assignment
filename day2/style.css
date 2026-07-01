@@ -1,0 +1,351 @@
+/* =========================
+   General Styling
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    padding:40px;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+}
+
+/* =========================
+   Assignment 1 - Course Card
+========================= */
+
+.page-header {
+    text-align: center;
+    padding: 20px 0 30px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 30px;
+    color: #111;
+}
+
+.page-header p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 6px;
+}
+
+/* ---- Batch Cards Container ---- */
+.batch-section {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+}
+
+/* This makes the cards appear in a row and wrap to next line */
+.batch-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Each card – a white box with shadow */
+.batch-card {
+    background: white;
+    width: 260px;
+    padding: 20px 22px 24px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Tag "Starts in X days" – floats to the right */
+.batch-tag {
+    background-color: #d6d5d5;
+    color: orangered;
+    float: right;
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -4px;
+}
+
+/* Course title */
+.batch-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* Start date line */
+.batch-start {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.batch-start i {
+    color: #f59e0b;
+    margin-right: 4px;
+}
+
+.batch-start strong {
+    color: #111;
+}
+
+/* Price row */
+.batch-price {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.price-current {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111;
+}
+
+.price-old {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.discount-badge {
+    font-size: 13px;
+    font-weight: bold;
+    color: #16a34a;
+    background: #dcfce7;
+    padding: 2px 12px;
+    border-radius: 40px;
+}
+
+/* ---- Recorded Video Section ---- */
+.recorded-section {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+}
+
+.recorded-card {
+    background: #f1f5f9;
+    padding: 30px 25px;
+    border-radius: 24px;
+    border: 1px dashed #cbd5e1;
+    text-align: center;
+}
+
+.recorded-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.recorded-card h2 i {
+    color: #3b82f6;
+    margin-right: 8px;
+}
+
+.recorded-card h2 span {
+    background: #e2e8f0;
+    padding: 0 14px;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.recorded-card p {
+    font-size: 15px;
+    color: #444;
+    margin: 12px 0 20px;
+    line-height: 1.6;
+}
+
+.recorded-card p i {
+    margin: 0 4px 0 12px;
+}
+.recorded-card p i:first-child {
+    margin-left: 0;
+}
+
+.btn-recorded {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-recorded:hover {
+    background: #1d4ed8;
+}
+
+/* ---- Footer ---- */
+.page-footer {
+    text-align: center;
+    padding: 25px 0 10px;
+    border-top: 2px solid #ddd;
+    margin-top: 40px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* ---- Simple responsive for small screens ---- */
+@media (max-width: 600px) {
+    .batch-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .recorded-card h2 {
+        font-size: 20px;
+    }
+
+    .recorded-card h2 span {
+        display: block;
+        margin-top: 6px;
+        font-size: 18px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+}
+
+/* =========================
+   Assignment 2 - Profile Card
+========================= */
+
+.profile{
+    width:300px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+    
+}
+
+.profile img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin:auto;
+}
+
+.profile h2{
+    margin:15px 0 5px;
+}
+
+.skills{
+    margin:15px 0;
+}
+
+.skills span{
+    display:inline-block;
+    background:#e8e8e8;
+    padding:6px 12px;
+    margin:5px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.icons{
+    margin-top:15px;
+}
+
+.icons i{
+    font-size:24px;
+    margin:0 8px;
+}
+
+/* =========================
+   Assignment 3 - Review Card
+========================= */
+
+.review{
+    width:330px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.review img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    margin:auto;
+}
+
+.review h3{
+    margin-top:10px;
+}
+
+.review p{
+    margin:10px 0;
+}
+
+.star{
+    color:orange;
+    margin:10px 0;
+}
+
+.review button{
+    background:#dc3545;
+    color:white;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+/* =========================
+   Assignment 4 - Blog Card
+========================= */
+
+.blog{
+    width:350px;
+    margin:30px auto;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.text{
+    padding:15px;
+}
+
+.text p{
+    margin:10px 0;
+}
+
+.text h2{
+    margin-bottom:10px;
+}
+
+.text a{
+    text-decoration:none;
+    color:#007bff;
+    font-weight:bold;
+}
+
+.text a:hover{
+    text-decoration:underline;
+}
